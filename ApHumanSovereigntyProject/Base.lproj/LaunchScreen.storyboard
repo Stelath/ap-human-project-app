@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="n2g-Rh-xVU">
+            <objects>
+                <viewController id="MQH-8E-Cmk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p5b-zx-bPK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bdb-oA-lwA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YZ2-Fw-W6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlagOfLepordland" translatesAutoresizingMaskIntoConstraints="NO" id="R4c-fq-Y4t">
+                                <rect key="frame" x="-45" y="122.5" width="465" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="qn6-4c-WQW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Guide To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozp-Jn-iWA">
+                                <rect key="frame" x="75.5" y="275.5" width="224" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="t37-ZS-2Ie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lepordland" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZw-4P-QSW">
+                                <rect key="frame" x="97.5" y="317.5" width="180" height="32"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WZw-4P-QSW" firstAttribute="centerY" secondItem="YZ2-Fw-W6z" secondAttribute="centerY" id="6Fx-2o-YEI"/>
+                            <constraint firstItem="R4c-fq-Y4t" firstAttribute="centerX" secondItem="YZ2-Fw-W6z" secondAttribute="centerX" id="UxW-nY-d8W"/>
+                            <constraint firstItem="ozp-Jn-iWA" firstAttribute="top" secondItem="R4c-fq-Y4t" secondAttribute="bottom" constant="25" id="WGE-p4-UfJ"/>
+                            <constraint firstItem="WZw-4P-QSW" firstAttribute="top" secondItem="ozp-Jn-iWA" secondAttribute="bottom" constant="10" id="bXy-Wc-EaI"/>
+                            <constraint firstItem="WZw-4P-QSW" firstAttribute="centerX" secondItem="YZ2-Fw-W6z" secondAttribute="centerX" id="qc9-6c-C4e"/>
+                            <constraint firstItem="ozp-Jn-iWA" firstAttribute="centerX" secondItem="YZ2-Fw-W6z" secondAttribute="centerX" id="vDa-Ez-Kdg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="ySn-ry-Uyq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gon-nn-Qob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1074" y="-922"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FlagOfLepordland" width="465" height="359"/>
+        <image name="Home" width="26.5" height="25"/>
+    </resources>
+</document>
